@@ -1,0 +1,311 @@
+[
+  {
+    "id": "frieren",
+    "title": "Frieren: Beyond Journey's End",
+    "type": "anime",
+    "types": ["anime", "mangá"],
+    "year": 2023,
+    "status": "finalizado",
+    "rating": 9.3,
+    "popularity": 98,
+    "episodes": 28,
+    "formats": [
+      { "type": "mangá", "length": "140+ capítulos publicados", "note": "obra original em andamento" },
+      { "type": "anime", "length": "28 episódios", "note": "1ª temporada finalizada" }
+    ],
+    "genres": ["fantasia", "aventura", "drama"],
+    "vibes": ["reflexivo", "emocional", "fantasia contemplativa", "luto e memória", "aventura calma"],
+    "studio": "Madhouse",
+    "author": "Kanehito Yamada e Tsukasa Abe",
+    "duration": "24 min por episódio",
+    "warnings": ["luto", "violência fantástica moderada"],
+    "platforms": {
+      "streaming": [
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=Frieren" },
+        { "name": "Netflix", "url": "https://www.netflix.com/search?q=frieren" }
+      ],
+      "reading": [
+        { "name": "Viz Media", "url": "https://www.viz.com/frieren-beyond-journey-s-end" }
+      ],
+      "note": "streaming pode variar por região e assinatura."
+    },
+    "characters": [
+      { "name": "Frieren", "role": "protagonista", "description": "elfa maga que vive séculos e começa a entender tarde demais o valor do tempo humano." },
+      { "name": "Fern", "role": "aprendiz", "description": "jovem maga disciplinada que acompanha Frieren em uma nova jornada." },
+      { "name": "Stark", "role": "guerreiro", "description": "aprendiz de Eisen que esconde coragem por trás da insegurança." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/anime/1015/138006.jpg",
+    "banner": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg",
+    "synopsis": "após derrotar o rei demônio, a elfa Frieren segue vivendo enquanto seus antigos companheiros envelhecem. Entre memórias, magia e novas viagens, ela aprende tarde demais o peso dos laços que deixou passar."
+  },
+  {
+    "id": "solo-leveling",
+    "title": "Solo Leveling",
+    "type": "manhwa",
+    "types": ["manhwa", "anime"],
+    "year": 2018,
+    "status": "finalizado",
+    "rating": 8.7,
+    "popularity": 96,
+    "episodes": 200,
+    "formats": [
+      { "type": "manhwa", "length": "200 capítulos", "note": "história principal finalizada" },
+      { "type": "anime", "length": "25 episódios", "note": "duas temporadas; adapta parte do manhwa" }
+    ],
+    "genres": ["ação", "fantasia", "aventura"],
+    "vibes": ["power fantasy", "hype de luta", "evolução absurda", "dungeons", "protagonista overpower"],
+    "studio": "A-1 Pictures",
+    "author": "Chugong e DUBU",
+    "duration": "24 min por episódio",
+    "warnings": ["violência", "monstros", "morte"],
+    "platforms": {
+      "streaming": [
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=Solo%20Leveling" }
+      ],
+      "reading": [
+        { "name": "Tappytoon", "url": "https://www.tappytoon.com/en/book/solo-leveling-official" }
+      ],
+      "note": "o anime está disponível legalmente no Brasil via Crunchyroll; leitura pode variar por idioma/região."
+    },
+    "characters": [
+      { "name": "Sung Jinwoo", "role": "protagonista", "description": "caçador rank E que recebe a chance de evoluir sem limites." },
+      { "name": "Cha Hae-In", "role": "caçadora", "description": "uma das caçadoras mais fortes da Coreia, sensível à aura dos outros caçadores." },
+      { "name": "O Sistema", "role": "força misteriosa", "description": "interface que entrega missões, recompensas e evolução real para Jinwoo." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/manga/3/222295.jpg",
+    "banner": "https://cdn.myanimelist.net/images/manga/3/222295l.jpg",
+    "synopsis": "Sung Jinwoo é conhecido como o caçador mais fraco, até sobreviver a uma dungeon impossível e ser escolhido por um sistema misterioso. Agora, cada batalha pode torná-lo mais forte do que qualquer outro humano."
+  },
+  {
+    "id": "demon-slayer",
+    "title": "Demon Slayer",
+    "type": "anime",
+    "types": ["anime", "mangá"],
+    "year": 2019,
+    "status": "em lançamento",
+    "rating": 8.5,
+    "popularity": 94,
+    "episodes": 55,
+    "formats": [
+      { "type": "mangá", "length": "205 capítulos", "note": "obra original finalizada" },
+      { "type": "anime", "length": "63 episódios + filmes", "note": "adaptação ainda fechando o arco final em filmes" }
+    ],
+    "genres": ["ação", "sobrenatural", "drama"],
+    "vibes": ["hype de luta", "emocional", "superação", "família", "animação de impacto"],
+    "studio": "ufotable",
+    "author": "Koyoharu Gotouge",
+    "duration": "24 min por episódio",
+    "warnings": ["violência", "morte familiar", "demônios"],
+    "platforms": {
+      "streaming": [
+        { "name": "Netflix", "url": "https://www.netflix.com/search?q=demon%20slayer" },
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=Demon%20Slayer" }
+      ],
+      "reading": [
+        { "name": "Viz Media", "url": "https://www.viz.com/demon-slayer-kimetsu-no-yaiba" }
+      ],
+      "note": "catálogo e temporadas disponíveis podem variar por plataforma."
+    },
+    "characters": [
+      { "name": "Tanjiro Kamado", "role": "protagonista", "description": "jovem gentil que se torna caçador para salvar a irmã." },
+      { "name": "Nezuko Kamado", "role": "irmã", "description": "transformada em demônio, luta para preservar sua humanidade." },
+      { "name": "Zenitsu Agatsuma", "role": "aliado", "description": "caçador medroso que revela força absurda quando perde a consciência." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+    "banner": "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+    "synopsis": "depois de ter a família massacrada e ver Nezuko transformada em demônio, Tanjiro entra para os caçadores em busca de uma cura. Sua jornada mistura vingança, compaixão e batalhas contra criaturas cada vez mais cruéis."
+  },
+  {
+    "id": "chainsaw-man",
+    "title": "Chainsaw Man",
+    "type": "mangá",
+    "types": ["mangá", "anime"],
+    "year": 2018,
+    "status": "em lançamento",
+    "rating": 8.8,
+    "popularity": 93,
+    "episodes": 180,
+    "formats": [
+      { "type": "mangá", "length": "228+ capítulos publicados", "note": "obra original em andamento" },
+      { "type": "anime", "length": "12 episódios + filme", "note": "1ª temporada e arco Reze adaptados" }
+    ],
+    "genres": ["ação", "terror", "sobrenatural"],
+    "vibes": ["caótico", "sombrio", "humor ácido", "demônios", "anti-herói"],
+    "studio": "MAPPA",
+    "author": "Tatsuki Fujimoto",
+    "duration": "24 min por episódio",
+    "warnings": ["violência gráfica", "temas maduros", "terror corporal"],
+    "platforms": {
+      "streaming": [
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=Chainsaw%20Man" }
+      ],
+      "reading": [
+        { "name": "MANGA Plus", "url": "https://mangaplus.shueisha.co.jp/titles/100037" },
+        { "name": "Viz Media", "url": "https://www.viz.com/chainsaw-man" }
+      ],
+      "note": "leitura gratuita/oficial pode ter capítulos limitados conforme a plataforma."
+    },
+    "characters": [
+      { "name": "Denji", "role": "protagonista", "description": "garoto endividado que se torna um híbrido humano-demônio." },
+      { "name": "Pochita", "role": "demônio", "description": "demônio motosserra e melhor amigo de Denji." },
+      { "name": "Makima", "role": "caçadora", "description": "figura enigmática da Segurança Pública que oferece uma nova vida a Denji." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/manga/3/216464.jpg",
+    "banner": "https://cdn.myanimelist.net/images/manga/3/216464l.jpg",
+    "synopsis": "endividado e sozinho, Denji sobrevive caçando demônios ao lado de Pochita, até uma traição mudar seu corpo para sempre. Como Chainsaw Man, ele ganha uma chance de viver melhor, mas descobre que desejos simples também atraem monstros."
+  },
+  {
+    "id": "one-piece",
+    "title": "One Piece",
+    "type": "anime",
+    "types": ["anime", "mangá"],
+    "year": 1999,
+    "status": "em lançamento",
+    "rating": 8.9,
+    "popularity": 92,
+    "episodes": 1100,
+    "formats": [
+      { "type": "mangá", "length": "1180+ capítulos publicados", "note": "obra original em andamento" },
+      { "type": "anime", "length": "1160+ episódios exibidos", "note": "anime longo em andamento" }
+    ],
+    "genres": ["aventura", "comédia", "ação"],
+    "vibes": ["aventura épica", "amizade", "liberdade", "mundo gigante", "piratas"],
+    "studio": "Toei Animation",
+    "author": "Eiichiro Oda",
+    "duration": "24 min por episódio",
+    "warnings": ["violência cartunesca", "temas de guerra", "morte"],
+    "platforms": {
+      "streaming": [
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=One%20Piece" },
+        { "name": "Netflix", "url": "https://www.netflix.com/search?q=one%20piece" }
+      ],
+      "reading": [
+        { "name": "MANGA Plus", "url": "https://mangaplus.shueisha.co.jp/titles/100020" },
+        { "name": "Viz Media", "url": "https://www.viz.com/one-piece" }
+      ],
+      "note": "episódios e arcos disponíveis variam por plataforma."
+    },
+    "characters": [
+      { "name": "Monkey D. Luffy", "role": "capitão", "description": "pirata de borracha que quer encontrar o One Piece." },
+      { "name": "Roronoa Zoro", "role": "espadachim", "description": "combatente dos Chapéus de Palha que busca ser o maior espadachim do mundo." },
+      { "name": "Nami", "role": "navegadora", "description": "estrategista e cartógrafa que guia a tripulação pelo mar." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/anime/6/73245.jpg",
+    "banner": "https://cdn.myanimelist.net/images/anime/6/73245l.jpg",
+    "synopsis": "Monkey D. Luffy parte para o mar decidido a encontrar o lendário One Piece e se tornar o Rei dos Piratas. No caminho, reúne uma tripulação improvável e encara ilhas, governos e rivais que testam o verdadeiro sentido de liberdade."
+  },
+  {
+    "id": "omniscient-reader",
+    "title": "Omniscient Reader",
+    "type": "manhwa",
+    "types": ["manhwa", "novel"],
+    "year": 2020,
+    "status": "em lançamento",
+    "rating": 8.6,
+    "popularity": 89,
+    "episodes": 210,
+    "formats": [
+      { "type": "novel", "length": "551 capítulos", "note": "obra original finalizada" },
+      { "type": "manhwa", "length": "311+ capítulos publicados", "note": "adaptação em webtoon em andamento" }
+    ],
+    "genres": ["ação", "fantasia", "drama"],
+    "vibes": ["apocalipse", "estratégia", "plot twist", "metaficção", "sobrevivência"],
+    "studio": "REDICE Studio",
+    "author": "singNsong e Sleepy-C",
+    "duration": "capítulos semanais",
+    "warnings": ["violência", "apocalipse", "morte"],
+    "platforms": {
+      "streaming": [],
+      "reading": [
+        { "name": "WEBTOON", "url": "https://www.webtoons.com/en/action/omniscient-reader/list?title_no=2154" }
+      ],
+      "note": "a adaptação em webtoon tem leitura oficial em inglês no WEBTOON."
+    },
+    "characters": [
+      { "name": "Kim Dokja", "role": "protagonista", "description": "leitor que conhece o fim da história que invadiu o mundo real." },
+      { "name": "Yoo Joonghyuk", "role": "regressor", "description": "herói original da novel, preso em ciclos de sobrevivência." },
+      { "name": "Han Sooyoung", "role": "aliada", "description": "autora e estrategista envolvida nos cenários do apocalipse." }
+    ],
+    "cover": "https://a.storyblok.com/f/178900/1064x1505/e6bb5351c9/omniscient-reader-kv.png/m/filters:quality(85)format(webp)",
+    "banner": "https://a.storyblok.com/f/178900/1064x1505/e6bb5351c9/omniscient-reader-kv.png/m/filters:quality(85)format(webp)",
+    "synopsis": "Kim Dokja era o único leitor fiel de uma web novel apocalíptica, até o mundo real começar a seguir exatamente aquela história. Conhecer os eventos futuros vira sua maior vantagem, mas sobreviver exige mudar o roteiro."
+  },
+  {
+    "id": "heaven-official",
+    "title": "Heaven Official's Blessing",
+    "type": "manhua",
+    "types": ["manhua", "novel"],
+    "year": 2017,
+    "status": "finalizado",
+    "rating": 8.8,
+    "popularity": 84,
+    "episodes": 244,
+    "formats": [
+      { "type": "novel", "length": "244 capítulos + 8 extras", "note": "obra original finalizada" },
+      { "type": "manhua", "length": "100+ capítulos digitais", "note": "adaptação ilustrada; disponibilidade oficial varia por região" }
+    ],
+    "genres": ["fantasia", "romance", "drama"],
+    "vibes": ["romance slow burn", "xianxia", "mistério", "deuses e fantasmas", "devoção"],
+    "studio": "Bilibili",
+    "author": "Mo Xiang Tong Xiu e STARember",
+    "duration": "capítulos digitais",
+    "warnings": ["violência fantástica", "trauma", "intriga espiritual"],
+    "platforms": {
+      "streaming": [
+        { "name": "Bilibili", "url": "https://www.bilibili.tv/en/play/35336" }
+      ],
+      "reading": [
+        { "name": "Bilibili Comics", "url": "https://www.bilibilicomics.com/" }
+      ],
+      "note": "a disponibilidade oficial em inglês do manhua mudou após o encerramento do Bilibili Comics internacional."
+    },
+    "characters": [
+      { "name": "Xie Lian", "role": "protagonista", "description": "príncipe ascendido que retorna aos céus após séculos de queda." },
+      { "name": "Hua Cheng", "role": "rei fantasma", "description": "figura poderosa e devota ligada ao passado de Xie Lian." },
+      { "name": "San Lang", "role": "mistério", "description": "jovem carismático que acompanha Xie Lian em suas missões." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/manga/3/233331.jpg",
+    "banner": "https://cdn.myanimelist.net/images/manga/3/233331l.jpg",
+    "synopsis": "Xie Lian, um príncipe banido e ridicularizado pelos céus, ascende pela terceira vez sem prestígio nem seguidores. Em novas missões no mundo mortal, ele encontra Hua Cheng, um poderoso rei fantasma ligado ao seu passado."
+  },
+  {
+    "id": "spy-family",
+    "title": "Spy x Family",
+    "type": "anime",
+    "types": ["anime", "mangá"],
+    "year": 2022,
+    "status": "em lançamento",
+    "rating": 8.6,
+    "popularity": 91,
+    "episodes": 37,
+    "formats": [
+      { "type": "mangá", "length": "130+ capítulos publicados", "note": "obra original em andamento" },
+      { "type": "anime", "length": "50 episódios", "note": "adaptação em temporadas" }
+    ],
+    "genres": ["comédia", "ação", "slice of life"],
+    "vibes": ["cozy", "família falsa", "comédia de ação", "espionagem", "found family"],
+    "studio": "WIT Studio e CloverWorks",
+    "author": "Tatsuya Endo",
+    "duration": "24 min por episódio",
+    "warnings": ["violência leve", "espionagem", "humor familiar"],
+    "platforms": {
+      "streaming": [
+        { "name": "Crunchyroll", "url": "https://www.crunchyroll.com/search?q=Spy%20x%20Family" },
+        { "name": "Netflix", "url": "https://www.netflix.com/search?q=spy%20x%20family" }
+      ],
+      "reading": [
+        { "name": "MANGA Plus", "url": "https://mangaplus.shueisha.co.jp/titles/100056" },
+        { "name": "Viz Media", "url": "https://www.viz.com/spy-x-family" }
+      ],
+      "note": "temporadas disponíveis podem variar por serviço e região."
+    },
+    "characters": [
+      { "name": "Loid Forger", "role": "espião", "description": "agente Twilight, responsável por criar a família falsa." },
+      { "name": "Yor Forger", "role": "assassina", "description": "funcionária pública e assassina secreta conhecida como Thorn Princess." },
+      { "name": "Anya Forger", "role": "telepata", "description": "filha adotiva que sabe todos os segredos da família." }
+    ],
+    "cover": "https://cdn.myanimelist.net/images/anime/1441/122795.jpg",
+    "banner": "https://cdn.myanimelist.net/images/anime/1441/122795l.jpg",
+    "synopsis": "para impedir uma crise internacional, o espião Twilight precisa formar uma família falsa e infiltrar a filha em uma escola de elite. O plano parece perfeito, exceto pelo detalhe de que sua esposa é assassina e sua filha lê mentes."
+  }
+]

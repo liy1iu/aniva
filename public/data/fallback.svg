@@ -1,0 +1,8 @@
+<svg width="720" height="960" viewBox="0 0 720 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="960" fill="#111"/>
+  <rect x="44" y="44" width="632" height="872" rx="22" fill="#1A1A1A" stroke="#00E5FF" stroke-width="6"/>
+  <path d="M120 650L260 480L360 590L470 420L600 650H120Z" fill="#2A2A2A"/>
+  <circle cx="255" cy="312" r="68" fill="#FF006E"/>
+  <text x="360" y="760" text-anchor="middle" fill="#E5E5E5" font-family="Arial, sans-serif" font-size="54" font-weight="700">ANIVA</text>
+  <text x="360" y="820" text-anchor="middle" fill="#A0A0A0" font-family="Arial, sans-serif" font-size="28">imagem indisponível</text>
+</svg>
