@@ -1,4 +1,4 @@
-# aniva
+# ANIVA
 
 aniva organiza um catálogo de anime, mangá, manhwa e manhua. explore o que está em alta, filtre e ordene obras, consulte fichas, publique avaliações e comentários e monte sua lista pessoal.
 
