@@ -1,98 +1,105 @@
-import { Menu, Search, X } from 'lucide-react'
-import { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
-import Button from './Button'
+import { LogOut, Search } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { useAuth } from '../../context/useAuth'
 
 const links = [
-  // main navigation links
-  { to: '/', label: 'início' },
-  { to: '/browse', label: 'catálogo' },
-  { to: '/favorites', label: 'favoritos' },
-  { to: '/watchlist', label: 'watchlist' },
-  { to: '/suggestions', label: 'indicações' },
+  { to: '/', label: 'Início' },
+  { to: '/catalogo', label: 'Catálogo' },
+  { to: '/minha-lista', label: 'Minha lista' },
 ]
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
   const [query, setQuery] = useState('')
+  const [theme, setTheme] = useState(() => document.documentElement.dataset.theme || 'light')
+  const [accountMenuOpen, setAccountMenuOpen] = useState(false)
+  const accountMenuRef = useRef(null)
+  const accountButtonRef = useRef(null)
   const navigate = useNavigate()
+  const location = useLocation()
+  const { user, logout } = useAuth()
 
-  // sends search to the catalog and closes the mobile menu
-  function submitSearch(event) {
-    event.preventDefault()
-    navigate(`/browse?q=${encodeURIComponent(query.trim())}`)
-    setOpen(false)
+  useEffect(() => {
+    if (!accountMenuOpen) return undefined
+
+    function closeOutside(event) {
+      if (!accountMenuRef.current?.contains(event.target)) setAccountMenuOpen(false)
+    }
+
+    function closeOnEscape(event) {
+      if (event.key === 'Escape') {
+        setAccountMenuOpen(false)
+        accountButtonRef.current?.focus()
+      }
+    }
+
+    document.addEventListener('pointerdown', closeOutside)
+    document.addEventListener('keydown', closeOnEscape)
+    return () => {
+      document.removeEventListener('pointerdown', closeOutside)
+      document.removeEventListener('keydown', closeOnEscape)
+    }
+  }, [accountMenuOpen])
+
+  function toggleTheme() {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    document.documentElement.dataset.theme = next
+    localStorage.setItem('aniva:tema', next)
+    setTheme(next)
   }
 
-  return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-ink/82 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <NavLink to="/" className="flex h-10 items-center" aria-label="Aniva início">
-          <img src="/aniva-logo.png" alt="" className="h-9 w-auto object-contain" />
-        </NavLink>
+  function submitSearch(event) {
+    event.preventDefault()
+    navigate(`/catalogo?q=${encodeURIComponent(query.trim())}`)
+  }
 
-        <div className="hidden items-center gap-2 lg:flex">
-          {/* desktop links highlight the active page */}
-          {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className={({ isActive }) =>
-                `rounded-md px-3 py-2 text-sm font-semibold lowercase transition ${
-                  isActive ? 'bg-neon/15 text-neon' : 'text-muted hover:bg-white/5 hover:text-paper'
-                }`
-              }
-            >
-              {link.label}
-            </NavLink>
-          ))}
+  const initials = String(user?.nome || '').trim().split(/\s+/).slice(0, 2).map((part) => part[0]).join('').toLocaleUpperCase('pt-BR')
+
+  return (
+    <header className="home-site-nav">
+      <div className="home-nav-inner">
+        <div className="home-nav-top">
+          <NavLink to="/" className="home-logo" aria-label="ANiVA início" />
+          <div className="home-nav-tools">
+            {user ? (
+              <div className="home-user-menu" ref={accountMenuRef}>
+                <button ref={accountButtonRef} className="home-icon-button home-user-avatar" type="button" aria-label={`Menu da conta de ${user.nome}`} aria-haspopup="menu" aria-expanded={accountMenuOpen} aria-controls="home-account-menu" onClick={() => setAccountMenuOpen((open) => !open)}>{initials}</button>
+                {accountMenuOpen ? (
+                  <div className="home-account-menu" id="home-account-menu" role="menu">
+                    <p className="home-account-name">{user.nome}</p>
+                    <Link to="/minha-lista" role="menuitem" onClick={() => setAccountMenuOpen(false)}>Minha lista</Link>
+                    <button type="button" role="menuitem" className="home-account-logout" onClick={() => { setAccountMenuOpen(false); logout() }}><LogOut size={16} aria-hidden="true" />Sair</button>
+                  </div>
+                ) : null}
+              </div>
+            ) : (
+              <Link className="home-account-button" to={`/entrar?volta=${encodeURIComponent(`${location.pathname}${location.search}`)}`}>Entrar</Link>
+            )}
+            <button className="home-icon-button" type="button" aria-label={`Alternar tema, atual ${theme === 'dark' ? 'escuro' : 'claro'}`} aria-pressed={theme === 'dark'} onClick={toggleTheme}><span aria-hidden="true">◐</span></button>
+          </div>
         </div>
 
-        <form onSubmit={submitSearch} className="hidden w-full max-w-xs items-center rounded-md border border-white/10 bg-white/[0.06] px-3 lg:flex">
-          <Search size={17} className="text-muted" />
-          <input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            className="h-10 min-w-0 flex-1 bg-transparent px-3 text-sm text-paper outline-none placeholder:text-muted"
-            placeholder="buscar títulos"
-          />
-        </form>
-
-        <Button variant="secondary" className="h-10 w-10 px-0 lg:hidden" onClick={() => setOpen((value) => !value)} aria-label="abrir menu">
-          {open ? <X size={18} /> : <Menu size={18} />}
-        </Button>
-      </nav>
-
-      {open ? (
-        <div className="border-t border-white/10 bg-ink px-4 py-4 lg:hidden">
-          {/* mobile menu repeats search and nav links */}
-          <form onSubmit={submitSearch} className="mb-4 flex items-center rounded-md border border-white/10 bg-white/[0.06] px-3">
-            <Search size={17} className="text-muted" />
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              className="h-10 flex-1 bg-transparent px-3 text-sm text-paper outline-none"
-              placeholder="buscar títulos"
-            />
-          </form>
-          <div className="grid gap-2">
+        <nav className="home-nav-bottom" aria-label="Navegação do site">
+          <div className="home-nav-links">
             {links.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  `rounded-md px-3 py-3 text-sm font-semibold lowercase transition ${
-                    isActive ? 'bg-neon/15 text-neon' : 'text-muted hover:bg-white/5 hover:text-paper'
-                  }`
-                }
-              >
+              <NavLink key={link.to} to={link.to} className={({ isActive }) => `home-nav-link ${isActive ? 'is-active' : ''}`}>
                 {link.label}
               </NavLink>
             ))}
           </div>
-        </div>
-      ) : null}
+          <form onSubmit={submitSearch} className="home-nav-search" role="search">
+            <input
+              className="home-search-input"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Buscar títulos"
+              aria-label="Buscar títulos"
+            />
+            <button type="submit" aria-label="Buscar"><Search size={17} aria-hidden="true" /></button>
+          </form>
+        </nav>
+      </div>
     </header>
   )
 }

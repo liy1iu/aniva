@@ -1,68 +1,38 @@
-# ANIVA
+# ANiVA
 
-ANIVA é uma aplicação web de catálogo para anime, mangá, manhwa e manhua. O projeto permite consultar títulos, filtrar e ordenar o catálogo, abrir detalhes, favoritar, montar uma watchlist, cadastrar usuários e enviar indicações.
+ANiVA organiza um catálogo de anime, mangá, manhwa e manhua. Explore o que está em alta, filtre e ordene obras, consulte fichas, publique avaliações e comentários e monte sua lista pessoal.
 
-## funcionalidades
-
-- home com destaque do dia, seções de tendência e categorias.
-- catálogo com busca, filtros por tipo, gênero, vibe, status e nota mínima.
-- ordenação por melhor nota, títulos mais recentes e ordem alfabética.
-- página de detalhes com sinopse, nota, gêneros e recomendações.
-- favoritos e watchlist salvos no LocalStorage.
-- cadastro e consulta de usuários, com formulário validado em JavaScript.
-- envio e consulta de indicações vinculadas a usuários cadastrados.
-- upvote em indicações enviadas.
-- confirmação em modal antes de apagar usuários ou indicações.
-- dados carregados por Fetch API a partir de JSON.
-- rotas com React Router.
-- interface responsiva com Tailwind CSS, Flexbox, Grid, animações e feedback visual em hover.
-
-## tecnologias
-
-- React
-- Vite
-- React Router
-- Tailwind CSS
-- Framer Motion
-- Lucide React
-- Fetch API
-- LocalStorage
-
-## como executar
+## Rodar e verificar
 
 ```bash
-npm install
+npm ci
 npm run dev
-```
-
-acesse:
-
-```text
-http://127.0.0.1:5173/
-```
-
-## scripts
-
-```bash
 npm run lint
 npm run build
+npm test
 ```
 
-## estrutura principal
+O Vite mostra no terminal o endereço local depois de `npm run dev`.
 
-```text
-src/
-  components/
-  hooks/
-  pages/
-  services/
-  utils/
-public/
-  data/media.json
-```
+## Pastas e arquivos
 
-## observações acadêmicas
+- `src/components`: navegação e cartões de obra.
+- `src/context`: conta e estado da lista.
+- `src/pages`: início, catálogo, ficha da obra, minha lista e entrada.
+- `src/services/api.js`: funções de acesso ao catálogo, conta e feedback.
+- `src/utils`: funções compartilhadas para dados e imagens.
+- `public/data/media.json`: catálogo usado pelo frontend.
+- `public/fonts.css` e `public/fonts`: fontes locais.
 
-O projeto utiliza HTML semântico nos componentes, Box Model, Flexbox, Grid Layout, responsividade com classes utilitárias e media queries do Tailwind, componentização com props, estado com useState, efeitos com useEffect, navegação com React Router, consumo de JSON via Fetch API e armazenamento local com LocalStorage.
+## Rotas
 
-Também foram aplicadas validações em formulários, filtros dinâmicos gerados a partir dos dados do catálogo, modais de confirmação para ações destrutivas e componentes reutilizáveis para botões, cards, inputs, grids, filtros e telas de detalhe.
+- `/`: início.
+- `/catalogo`: busca, filtros por formato, gênero, trope e situação, e ordenação. Os critérios ficam na URL: `q`, `formato`, `genero`, `trope`, `status` e `ordem`.
+- `/obra/:id`: ficha, avaliações e comentários.
+- `/minha-lista`: favoritos e lista para ver ou ler, com situação e progresso.
+- `/entrar`: entrada e criação de conta. A página inicial também oferece busca e alternância entre tema claro e escuro.
+- `/favoritos` e `/para-ver-ler`: redirecionam para `/minha-lista`.
+
+## Origem dos dados
+
+O catálogo é lido de `public/data/media.json` por `getMediaCatalog`. Busca, filtros e ordenação são processados no navegador. `rating` e `popularity` são números; cada obra pode ter a lista `tropes`.

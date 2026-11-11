@@ -14,7 +14,7 @@
       { "type": "anime", "length": "28 episódios", "note": "1ª temporada finalizada" }
     ],
     "genres": ["fantasia", "aventura", "drama"],
-    "vibes": ["reflexivo", "emocional", "fantasia contemplativa", "luto e memória", "aventura calma"],
+    "tropes": ["reflexivo", "emocional", "fantasia contemplativa", "luto e memória", "aventura calma"],
     "studio": "Madhouse",
     "author": "Kanehito Yamada e Tsukasa Abe",
     "duration": "24 min por episódio",
@@ -31,7 +31,7 @@
     },
     "characters": [
       { "name": "Frieren", "role": "protagonista", "description": "elfa maga que vive séculos e começa a entender tarde demais o valor do tempo humano." },
-      { "name": "Fern", "role": "aprendiz", "description": "jovem maga disciplinada que acompanha Frieren em uma nova jornada." },
+      { "name": "Fern", "role": "aprendiz", "description": "jovem maga disciplinada que segue Frieren por uma nova etapa." },
       { "name": "Stark", "role": "guerreiro", "description": "aprendiz de Eisen que esconde coragem por trás da insegurança." }
     ],
     "cover": "https://cdn.myanimelist.net/images/anime/1015/138006.jpg",
@@ -53,7 +53,7 @@
       { "type": "anime", "length": "25 episódios", "note": "duas temporadas; adapta parte do manhwa" }
     ],
     "genres": ["ação", "fantasia", "aventura"],
-    "vibes": ["power fantasy", "hype de luta", "evolução absurda", "dungeons", "protagonista overpower"],
+    "tropes": ["power fantasy", "hype de luta", "evolução absurda", "dungeons", "protagonista overpower"],
     "studio": "A-1 Pictures",
     "author": "Chugong e DUBU",
     "duration": "24 min por episódio",
@@ -91,7 +91,7 @@
       { "type": "anime", "length": "63 episódios + filmes", "note": "adaptação ainda fechando o arco final em filmes" }
     ],
     "genres": ["ação", "sobrenatural", "drama"],
-    "vibes": ["hype de luta", "emocional", "superação", "família", "animação de impacto"],
+    "tropes": ["hype de luta", "emocional", "superação", "família", "animação de impacto"],
     "studio": "ufotable",
     "author": "Koyoharu Gotouge",
     "duration": "24 min por episódio",
@@ -113,7 +113,7 @@
     ],
     "cover": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
     "banner": "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
-    "synopsis": "depois de ter a família massacrada e ver Nezuko transformada em demônio, Tanjiro entra para os caçadores em busca de uma cura. Sua jornada mistura vingança, compaixão e batalhas contra criaturas cada vez mais cruéis."
+    "synopsis": "depois de ter a família massacrada e ver Nezuko transformada em demônio, Tanjiro entra para os caçadores em busca de uma cura. A história mistura vingança, compaixão e batalhas contra criaturas cada vez mais cruéis."
   },
   {
     "id": "chainsaw-man",
@@ -130,7 +130,7 @@
       { "type": "anime", "length": "12 episódios + filme", "note": "1ª temporada e arco Reze adaptados" }
     ],
     "genres": ["ação", "terror", "sobrenatural"],
-    "vibes": ["caótico", "sombrio", "humor ácido", "demônios", "anti-herói"],
+    "tropes": ["caótico", "sombrio", "humor ácido", "demônios", "anti-herói"],
     "studio": "MAPPA",
     "author": "Tatsuki Fujimoto",
     "duration": "24 min por episódio",
@@ -169,7 +169,7 @@
       { "type": "anime", "length": "1160+ episódios exibidos", "note": "anime longo em andamento" }
     ],
     "genres": ["aventura", "comédia", "ação"],
-    "vibes": ["aventura épica", "amizade", "liberdade", "mundo gigante", "piratas"],
+    "tropes": ["aventura épica", "amizade", "liberdade", "mundo gigante", "piratas"],
     "studio": "Toei Animation",
     "author": "Eiichiro Oda",
     "duration": "24 min por episódio",
@@ -209,7 +209,7 @@
       { "type": "manhwa", "length": "311+ capítulos publicados", "note": "adaptação em webtoon em andamento" }
     ],
     "genres": ["ação", "fantasia", "drama"],
-    "vibes": ["apocalipse", "estratégia", "plot twist", "metaficção", "sobrevivência"],
+    "tropes": ["apocalipse", "estratégia", "plot twist", "metaficção", "sobrevivência"],
     "studio": "REDICE Studio",
     "author": "singNsong e Sleepy-C",
     "duration": "capítulos semanais",
@@ -245,7 +245,7 @@
       { "type": "manhua", "length": "100+ capítulos digitais", "note": "adaptação ilustrada; disponibilidade oficial varia por região" }
     ],
     "genres": ["fantasia", "romance", "drama"],
-    "vibes": ["romance slow burn", "xianxia", "mistério", "deuses e fantasmas", "devoção"],
+    "tropes": ["romance slow burn", "xianxia", "mistério", "deuses e fantasmas", "devoção"],
     "studio": "Bilibili",
     "author": "Mo Xiang Tong Xiu e STARember",
     "duration": "capítulos digitais",
@@ -283,7 +283,7 @@
       { "type": "anime", "length": "50 episódios", "note": "adaptação em temporadas" }
     ],
     "genres": ["comédia", "ação", "slice of life"],
-    "vibes": ["cozy", "família falsa", "comédia de ação", "espionagem", "found family"],
+    "tropes": ["cozy", "família falsa", "comédia de ação", "espionagem", "found family"],
     "studio": "WIT Studio e CloverWorks",
     "author": "Tatsuya Endo",
     "duration": "24 min por episódio",
@@ -306,6 +306,6 @@
     ],
     "cover": "https://cdn.myanimelist.net/images/anime/1441/122795.jpg",
     "banner": "https://cdn.myanimelist.net/images/anime/1441/122795l.jpg",
-    "synopsis": "para impedir uma crise internacional, o espião Twilight precisa formar uma família falsa e infiltrar a filha em uma escola de elite. O plano parece perfeito, exceto pelo detalhe de que sua esposa é assassina e sua filha lê mentes."
+    "synopsis": "para impedir uma crise internacional, o espião Twilight precisa formar uma família falsa e infiltrar a filha em uma escola de elite. O plano parece funcionar, exceto pelo detalhe de que sua esposa é assassina e sua filha lê mentes."
   }
 ]
